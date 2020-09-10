@@ -1,63 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="src/css/styles.css" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
 
-  <title>Cook Book - Template Content</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/public/css/styles.css" />
 
+    <title>MGM-Cook Book</title>
 </head>
 <body>
 <div class="container-fluid">
+ 
+  <!-- HEADER -->
+  <header class='navbar-wrapper'>
+    <!-- nav area -->
 
-  <!-- Header Section -->
-  <div class="row">
-    <!--   Logo-->
-    <div class="col">
-      <div class="logo">
-      </div>
-    </div>
-    <!--  Header-titel -->
-    <div class="col">
-      <div class="header-title">
-        <h1>MGM Cook book</h1>
-      </div>
-    </div>
-    <!--   Navbar-->
-    <div class="col">
-      <div class="navbar">
-        <!-- list items-->
-      </div>
-    </div>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="bg-light">
+           <a class="navbar-brand" href="#">
+             <img src="/src/public/images/logo-woo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+           </button>
+       <div class="collapse navbar-collapse" id="navbarText">
+             <ul class="navbar-nav mr-auto" id="navbar-nav-mr-auto">
+                 <li class="nav-item active">
+                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#">row pork</a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#">croc meat</a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#">asian</a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#">african</a>
+                 </li>
+             </ul>
+          <span class="navbar-text">
 
-  <!-- Content Section -->
+           <li class="dropdown">
+            <a class="navbar-brand" id="user-profile" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="http://lorempixel.com/100/100/people/9/" class="img-responsive img-thumbnail img-circle" id="img-thumbnail-img-circle">   
+            </a>
+            <h3 class="login">
+                login          
+            </h3>
+            <ul class="dropdown-menu dropdown-block" role="menu">
+                <li><a href="#">Profil edition</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+           </li>
+           </span>
+        </div>
+    </nav>
+  </header>   
+
+
+  <!-- MAIN Content Section -->
   <div class="row">
     <!--    Big Picture -->
-    <div class="col-6">
-            <div class="row">  
+    <div class="col-xs-6 col-md-11 col-lg-6 col-xl-5">
+            <!-- <div class="row">   -->
             <div class="rating">
               <h1>Vegane Tomaten-Quiche</h1>
-              <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-              </div>
-              
+              <!-- Star rating -->  
+              <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>             
             </div>
-            </div>
-            <div class="row">  
+            <!-- </div> -->
+            <!-- <div class="row">   -->
               <div class="bigpicture"></div>
               <img src="https://images.unsplash.com/photo-1551807501-9263ed1942d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="row">  
-            <div class="content-disciption"></div>
+            <!-- </div> -->
+            <!-- <div class="row">   -->
+            <div class="content-disciption">
               <h4>Zubereitung</h4>
               <p>
               <h6>Arbeitszeit ca. 30 Minuten</h6>
               <h6>Ruhezeit ca. 30 Minuten</h6>
-              
-              <h6>Koch-/Backzeit ca. 45 Minuten</h6>
-              
+              <h6>Koch-/Backzeit ca. 45 Minuten</h6>              
               <h6>Gesamtzeit ca. 1 Stunde 45 Minuten</h6>
               </p>
               <p>
@@ -69,124 +96,208 @@
               
               Die Quiche bei 200°C für weitere 20 Min. backen und anschließend die Temperatur auf 175°C reduzieren und die Quiche weitere 15 Min. fertigbacken.
               
-              Die Quiche vor dem Anschneiden 10 Min. ruhen lassen und dann servieren. Dazu passt ein kleiner bunter Salat.</p>
+              Die Quiche vor dem Anschneiden 10 Min. ruhen lassen und dann servieren. Dazu passt ein kleiner bunter Salat.
+              </p>
             </div>
     </div>
+
     <!-- Pictures in line -->
-    <div class="col-1">
-      
-      
-
-      <div class="row">
-        <!--  upper picture-->
-        <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="row">
-        <!--  middle picture-->
-        <img src="https://images.unsplash.com/photo-1518133683791-0b9de5a055f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="row">
-        <!--  lower picture-->
-        <img src="https://images.unsplash.com/photo-1566222496324-7d04b48d2585?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80" class="img-fluid" alt="Responsive image">
-      </div>
+    <div class="col-xs-4 col-md-5 col-lg-2 col-xl-2">
+      <h4>Weitere Bilder</h4>
+        <div class="row">
+          <!--  upper picture-->
+          <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="row">
+          <!--  middle picture-->
+          <img src="https://images.unsplash.com/photo-1518133683791-0b9de5a055f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="row">
+          <!--  lower picture-->
+          <img src="https://images.unsplash.com/photo-1566222496324-7d04b48d2585?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80" class="img-fluid" alt="Responsive image">
+        </div>
     </div>
-    <!--Recipe section-->
-    <div class="col-3">
-      <!--   recipe table -->
-      <div class="form-check">
-        <h2>Für den Teig:</h2>
-        <ul>
-                      
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">330 g	Vollkornweizenmehl</label>
-                      </div>
-                      
 
-                     
+    <!--Recipe section-->
+    <div class="col-xs-3 col-md-7 col-lg-4 col-xl-2">
+      <!--   recipe table -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="table-responsive">
+              <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+                <!-- <caption class="text-center">An example of a responsive table based on <a href="https://getbootstrap.com/css/#tables-responsive" target="_blank">Bootstrap</a>:</caption> -->
+                <thead>
+                  <tr>
+                    <th><h2>Für die Füllung:</h2></th>         
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
                       <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">150 g	Margarine, vegane</label>
-                      </div>
-                      
-                    
-                    
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">80 ml	Wasser</label>
-                    </div>
-
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">½ TL	Meersalz</label>
-                    </div>
-    </ul>
-      <h2>Für die Füllung:</h2>
-
-<ul>   
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">400 g	Seidentofu</label>
-                    </div>
-                    
-                    <div class="form-check">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><div class="form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">400 g	Cherrytomate(n)</label>
                     </div>
-
-                    <div class="form-check">
+    
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><div class="form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">2 EL	Olivenöl</label>
                     </div>
-
-                    <div class="form-check">
+    
+                    </td>                 
+                  </tr>
+                  <tr>
+                    <td> <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">2 EL	Speisestärke</label>
                     </div>
-                      <div class="form-check">
+    
+                    </td>
+                    </tr>
+                  <tr>
+                    <td><div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">1 TL	Meersalz</label>
+                    </div>
+    
+                    </td>
+                  </tr>
+                    <tr>
+                    <td><div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">1 TL	Kurkuma</label>
+                    </div>
+    
+                    </td>
+                    </tr>
+                  <tr>
+                    <td> <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">1 Prise(n)	Muskat, frisch gerieben</label>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td> <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">1 TL	Meersalz</label>
+                        <label class="form-check-label" for="exampleCheck1">1 Prise(n)	Muskat, frisch gerieben</label>
                       </div>
-                      <div class="form-check">
+                      </td>
+                      </tr>
+                      <tr>
+                        <td> <div class="form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">1 TL	Kurkuma</label>
+                          <label class="form-check-label" for="exampleCheck1">etwas	Pfeffer, frisch gemahlen</label>
                         </div>
-                      <div class="form-check">
+                        </td>
+                        </tr>
+                        <tr>
+                          <td> <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">1 Prise(n)	Muskat, frisch gerieben</label>
+                            <label class="form-check-label" for="exampleCheck1">1 TL	Thymian, frisch</label>
                           </div>
-                      <div class="form-check">
+                          </td>
+                          </tr>
+                          <tr>
+                            <td> <div class="form-check">
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">etwas	Pfeffer, frisch gemahlen</label>
-                            </div>                
-                      
-                      <div class="form-check">
+                              <label class="form-check-label" for="exampleCheck1">1 TL	Oregano, frisch</label>
+                            </div>
+                            </td>
+                            </tr>
+                            <tr>
+                              <td> <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">1 TL	Thymian, frisch</label>
-                              </div> 
-                      <div class="form-check">
+                                <label class="form-check-label" for="exampleCheck1">1 EL	Schnittlauch, frisch</label>
+                              </div>
+                              </td>
+                              </tr>
+                              <tr>
+                                <td> <div class="form-check">
                                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                  <label class="form-check-label" for="exampleCheck1">1 TL	Oregano, frisch</label>
-                                </div> 
-                      
-                      <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">1 EL	Schnittlauch, frisch</label>
-                                  </div> 
-                      <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">3 EL	Basilikum, frisch</label>
-                                  </div>
-</ul>                                                      
-    </div>
-
-    <!-- Footer Section -->
-    <div class="row">
-      <div class="col">
-        <!--Social media navbar-->
+                                  <label class="form-check-label" for="exampleCheck1">3 EL	Basilikum, frisch</label>
+                                </div>
+                                </td>
+                                </tr>
+                </tbody>
+                
+              </table>
+            </div><!--end of .table-responsive-->
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
+  <!-- FOOTER -->
+
+
+  <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
